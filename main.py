@@ -1,7 +1,9 @@
 from emp_operations import add_employee, get_employee, update_employee, delete_employee
 
+
 print("## Employee Management System by Amey ##")
 print("You can use this app to Add, View, Update, or Delete employees from your Database")
+
 
 def main():
     while True:
@@ -43,7 +45,8 @@ def main():
                 email = input("Enter email: ")
                 ph_number = input("Enter phone number: ")
                 job = input("Enter job profile: ")
-                update_employee(emp_id, first_name or None, last_name or None, email or None, ph_number or None, job or None)
+                update_employee(emp_id, first_name or None, last_name or None, email or None, ph_number or None,
+                                job or None)
                 print("Employee details updated successfully")
             except ValueError:
                 print("Invalid input. Please enter a valid employee ID.")
@@ -57,10 +60,12 @@ def main():
                 print("Invalid input. Please enter a valid employee ID.")
 
         elif choice == "5":
+            print("Thank You for using our App")
             break
 
         else:
             print("Invalid option. Please try again")
+
 
 if __name__ == "__main__":
     main()
