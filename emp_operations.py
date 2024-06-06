@@ -1,5 +1,6 @@
 from db_connection import create_connection, close_connection
 
+
 def add_employee(first_name, last_name, email, ph_number, job):
     conn = create_connection()
     if not conn:
@@ -20,6 +21,7 @@ def add_employee(first_name, last_name, email, ph_number, job):
     finally:
         cursor.close()
         close_connection(conn)
+
 
 def get_employee(emp_id):
     conn = create_connection()
@@ -42,6 +44,7 @@ def get_employee(emp_id):
     finally:
         cursor.close()
         close_connection(conn)
+
 
 def update_employee(emp_id, first_name=None, last_name=None, email=None, ph_number=None, job=None):
     conn = create_connection()
@@ -83,6 +86,7 @@ def update_employee(emp_id, first_name=None, last_name=None, email=None, ph_numb
     finally:
         cursor.close()
         close_connection(conn)
+
 
 def delete_employee(emp_id):
     conn = create_connection()

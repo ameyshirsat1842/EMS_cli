@@ -2,7 +2,7 @@ from emp_operations import add_employee, get_employee, update_employee, delete_e
 
 
 print("## Employee Management System by Amey ##")
-print("You can use this app to Add, View, Update, or Delete employees from your Database")
+print("You can use this app to Add, View, Update or Delete employees from our Database")
 
 
 def main():
